@@ -95,8 +95,7 @@ const Table = () => {
           <th>Rating</th>
           <th>Stock</th>
         </tr>
-      </table>
-      {products.map((product) => (
+        {products.map((product) => (
         <tr key={product.id}>
           <td style={{ borderBottom: "1px solid black" }}>{product.id}</td>
           <td style={{ borderBottom: "1px solid black" }}>{product.title}</td>
@@ -114,6 +113,8 @@ const Table = () => {
           <td style={{ borderBottom: "1px solid black" }}>{product.stock}</td>
         </tr>
       ))}
+      </table>
+      
       <Pagination
         total={total}
         page={page.page}
