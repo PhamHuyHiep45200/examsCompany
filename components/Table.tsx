@@ -87,13 +87,13 @@ const Table = () => {
       </div>
       <table id="customers">
         <tr>
-          <th>STT</th>
-          <th>Name</th>
-          <th>Brand</th>
-          <th>Description</th>
-          <th>Price</th>
-          <th>Rating</th>
-          <th>Stock</th>
+          <th>상품번호</th>
+          <th>상품명</th>
+          <th>브랜드</th>
+          <th>상품내용</th>
+          <th>가격</th>
+          <th>평점</th>
+          <th>재고</th>
         </tr>
         {products.map((product) => (
         <tr key={product.id}>
@@ -104,7 +104,7 @@ const Table = () => {
             className="product-item-desc"
             style={{ borderBottom: "1px solid black" }}
           >
-            <span>
+            <span className={product.description.length>40 ?style.truncate:''}>
               {product.description}
             </span>
           </td>
