@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.main {
+  width: 1200px;
+  background-color: red;
+  height: 100vh;
+}
+.header {
+  width: 1200px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 2px #333;
+}
+.name {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-bottom: 1px solid #888;
+}
+.nameSearch{
+    width: 100px;
+}
+.bottom {
+  padding: 15px 20px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.searchButton{
+    background-color: black;
+    color: white;
+    padding:10px;
+    border-radius: 4px;
+}
+
+.truncate{
+    display: -webkit-box;
+  	-webkit-line-clamp: 1; 
+  	-webkit-box-orient: horizontal;
+  	overflow: hidden;
+  	text-overflow: ellipsis;
+}
