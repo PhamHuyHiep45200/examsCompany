@@ -26,8 +26,8 @@ function Pagination({ total, page, onChange }: PaginationProps) {
           onClick={() => onChange?.(i+1)}
           style={{
             margin:'0 5px',
-            color: page === i+1 ? "white" : "black",
-            backgroundColor: page === i+1 ? "black" : "#f5f5f5",
+            color: page === i+1 ? "white" : "#888",
+            backgroundColor: page === i+1 ? "#888" : "#f5f5f5",
             borderRadius:'3px',
             width: "40px",
             cursor:'pointer',
